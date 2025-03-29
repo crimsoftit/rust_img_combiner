@@ -1,8 +1,7 @@
 mod args;
 use args::ImgArgs;
 use image::{ io::Reader, DynamicImage, ImageFormat, imageops::FilterType::Triangle, GenericImageView };
-use std::{ io::BufReader, fs::File };
-use std::convert::TryInto;
+use std::{ io::BufReader, fs::File, convert::TryInto };
 
 #[derive(Debug)]
 enum ImgDataErrors {
